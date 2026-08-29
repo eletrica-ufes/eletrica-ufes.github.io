@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "pt-BR"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Projeto Extensionista Integrado | Engenharia Elétrica (UFES)"
+title                    : "Engenharia Elétrica (UFES) | Projeto Extensionista Integrado"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Engenharia Elétrica/UFES"
