@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "pt-BR"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Site Title"
+title                    : "Projeto Extensionista Integrado | Engenharia Elétrica (UFES)"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Engenharia Elétrica/UFES"
-description              : "An amazing website."
+description              : "Ações extensionistas feitas por discentes do curso de Engenharia Elétrica, nas disciplinas Projeto Extensionista Integrado I, II e III"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
