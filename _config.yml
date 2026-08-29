@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "pt-BR"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Engenharia Elétrica (UFES) | Projeto Extensionista Integrado"
-title_separator          : "-"
+title                    : "Extensão na Engenharia Elétrica (UFES)"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Engenharia Elétrica/UFES"
-description              : "Ações extensionistas feitas por discentes do curso de Engenharia Elétrica, nas disciplinas Projeto Extensionista Integrado I, II e III"
+name                     : "Engenharia Elétrica"
+description              : " "
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -331,3 +331,9 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Collections
+collections:
+  projetos:
+    output: true
+    permalink: /projetos/:path/
