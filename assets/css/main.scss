@@ -1,5 +1,8 @@
 ---
+# Front matter vazio necessário para o Jekyll processar o Sass
 ---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 /* Lista e Cards Minimalistas de Projetos */

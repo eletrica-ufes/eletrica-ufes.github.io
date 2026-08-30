@@ -1,4 +1,43 @@
-_site
-.sass-cache
+# Jekyll e arquivos gerados no build
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
+
+# Dependências e pacotes Node.js / Ruby
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.bundle/
+vendor/bundle/
+
+# Docker e arquivos de conteinerização
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+.docker/
+
+# Arquivos temporários e logs
+*.log
+.env
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Configurações de Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+package.json
+package-lock.json
+Rakefile

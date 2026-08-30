@@ -75,18 +75,3 @@ O Instituto Caminho do Bem e a AMPE Central necessitavam de uma análise prelimi
 </div>
 
 ---
-
-<!-- ## <i class="fas fa-camera"></i> Registros de Campo e Mapeamento
-
-<figure class="third">
-  <a href="/assets/images/projetos/2026-1-fotovoltaica/terreno.jpg">
-    <img src="/assets/images/projetos/2026-1-fotovoltaica/terreno.jpg" alt="Área do Terreno">
-  </a>
-  <a href="/assets/images/projetos/2026-1-fotovoltaica/fachada.jpg">
-    <img src="/assets/images/projetos/2026-1-fotovoltaica/fachada.jpg" alt="Fachada do Instituto">
-  </a>
-  <a href="/assets/images/projetos/2026-1-fotovoltaica/satelite.jpg">
-    <img src="/assets/images/projetos/2026-1-fotovoltaica/satelite.jpg" alt="Análise de Satélite">
-  </a>
-  <figcaption>Levantamento de campo, análise de fachadas e mapeamento aéreo via satélite.</figcaption>
-</figure> -->
