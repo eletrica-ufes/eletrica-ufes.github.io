@@ -80,8 +80,8 @@
   }
 
   .card-image {
-    width: 150px;
-    height: 95px;
+    width: 220px;
+    align-self: stretch;
     flex-shrink: 0;
     border-radius: 8px;
     overflow: hidden;
@@ -104,5 +104,59 @@
       width: 100%;
       height: 160px;
     }
+  }
+}
+
+/* ---- ajustes de espaçamento e leitura ---- */
+.page__content {
+  line-height: 1.75;
+
+  p {
+    margin-bottom: 1.4em;
+  }
+
+  h2 {
+    margin-top: 2.2em;
+    margin-bottom: 0.8em;
+  }
+
+  h3 {
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+  }
+}
+
+/* notices (os cards de materiais/ficha técnica) com respiro maior */
+.notice--primary, .notice--success {
+  padding: 1.5em;
+  margin-bottom: 2em !important;
+}
+
+.semestre-details {
+  margin-bottom: 1.5rem;
+
+  summary {
+    cursor: pointer;
+    list-style: none; /* remove a setinha padrão do navegador */
+
+    h2 {
+      display: inline-block;
+    }
+
+    &::-webkit-details-marker {
+      display: none; /* remove a setinha no Chrome/Safari */
+    }
+
+    &::before {
+      content: "▶";
+      display: inline-block;
+      margin-right: 0.5em;
+      font-size: 0.7em;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] summary::before {
+    transform: rotate(90deg);
   }
 }

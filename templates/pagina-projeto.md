@@ -38,11 +38,19 @@ gallery:
 
 {% capture ficha_tecnica %}
 ##### <i class="fas fa-info-circle"></i> Ficha Técnica do Projeto
+{% if page.publico_alvo %}
 *  <i class="fas fa-users"></i>  **Público-Alvo:**  {{ page.publico_alvo }}
+{% endif %}
+{% if page.pessoas_beneficiadas %}
 *  <i class="fas fa-heart"></i> **Pessoas beneficiadas:** {{ page.pessoas_beneficiadas }}
+{% endif %}
+{% if page.parceiros %}
 *  <i class="fas fa-handshake"></i>  **Parceiros:**  {{ page.parceiros | join: ", " }}
+{% endif %}
+{% if page.localidade %}
 *  <i class="fas fa-map-marker-alt"></i>  **Local:**  {{ page.localidade }}
-*  <i class="fas fa-user-graduate"></i>  **Discente Responsável:**  {{ page.estudantes | join: ", " }}
+{% endif %}
+*  <i class="fas fa-user-graduate"></i>  **Discentes Responsáveis:**  {{ page.estudantes | join: ", " }}
 *  <i class="fas fa-chalkboard-teacher"></i>  **Orientação:**  {{ page.orientadores | join: ", " }}
 {% endcapture %}
 
@@ -67,78 +75,4 @@ gallery:
 </div>
 
 
-{% if page.materiais.pdf %}
-  <div style="background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-      <h3 style="margin: 0; border: none; padding: 0;">
-        <i class="fas fa-fw fa-file-pdf"></i> Documentação (PDF)
-      </h3>
-      <a href="{{ page.materiais.pdf | relative_url }}" class="btn btn--info" target="_blank" rel="noopener" style="margin: 0;">
-        <i class="fas fa-fw fa-external-link-alt"></i> Abrir em nova aba
-      </a>
-    </div>
-    <div style="border: 1px solid #e1e4e8; border-radius: 6px; overflow: hidden; background: #fff;">
-      <iframe src="{{ page.materiais.pdf | relative_url }}" width="100%" height="500px" style="border: none; display: block;"></iframe>
-    </div>
-  </div>
-{% endif %}
-
-{% if page.materiais.github_repo %}
-  <div style="background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
-      <div>
-        <h3 style="margin: 0; border: none; padding: 0; font-size: 1.1em;">
-          <i class="fab fa-fw fa-github"></i> {{ page.materiais.github_repo }}
-        </h3>
-        {% if page.github_desc %}
-          <p style="margin: 0.3rem 0 0 0; font-size: 0.9em; color: #57606a;">
-            {{ page.github_desc }}
-          </p>
-        {% endif %}
-      </div>
-      <a href="https://github.com/{{ page.materiais.github_repo }}" class="btn btn--primary" target="_blank" rel="noopener" style="margin: 0;">
-        <i class="fas fa-fw fa-external-link-alt"></i> Ver no GitHub
-      </a>
-    </div>
-  </div>
-{% endif %}
-
-{% if page.materiais.website_url %}
-  <div style="background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
-      <h3 style="margin: 0; border: none; padding: 0;">
-        <i class="fas fa-fw fa-globe"></i> {{ page.website_title | default: "Plataforma Externa" }}
-      </h3>
-      <a href="{{ page.materiais.website_url }}" class="btn btn--primary" target="_blank" rel="noopener" style="margin: 0;">
-        <i class="fas fa-fw fa-external-link-alt"></i> Acessar Site
-      </a>
-    </div>
-  </div>
-{% endif %}
-
-{% if page.materiais.youtube_channel %}
-  <div style="background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
-      <div>
-        <h3 style="margin: 0; border: none; padding: 0; font-size: 1.1em;">
-          <i class="fab fa-fw fa-youtube" style="color: #ff0000;"></i> {{ page.materiais.youtube_channel_name | default: "Canal do YouTube" }}
-        </h3>
-        <p style="margin: 0.3rem 0 0 0; font-size: 0.9em; color: #57606a;">
-          Acesse para assistir aos vídeos e projetos no canal oficial.
-        </p>
-      </div>
-      <a href="https://www.youtube.com/{{ page.materiais.youtube_channel }}" class="btn btn--danger" target="_blank" rel="noopener" style="margin: 0;">
-        <i class="fas fa-fw fa-external-link-alt"></i> Visitar Canal
-      </a>
-    </div>
-  </div>
-{% endif %}
-
-{% if page.gallery %}
-  <div style="background: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
-    <h3 style="margin-top: 0; margin-bottom: 1rem; border: none; padding: 0;">
-      <i class="fas fa-fw fa-images"></i> Galeria de Fotos
-    </h3>
-    {% include gallery %}
-  </div>
-{% endif %}
+{% include materiais-projeto.html %}

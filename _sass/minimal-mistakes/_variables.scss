@@ -6,7 +6,8 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16px !default;
+// $doc-font-size: 16px !default;
+$doc-font-size: 17px !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
@@ -65,8 +66,10 @@ $sans-serif: $default-sans-serif !default;
 $sans-serif-narrow: $sans-serif !default;
 $monospace: $default-monospace !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
+// $global-font-family: $sans-serif !default;
+$global-font-family: $neo-grotesque !default;        // Inter/Roboto - ótima leitura em texto corrido
+// $header-font-family: $sans-serif !default;
+$header-font-family: $geometric-humanist !default;  // Montserrat/Avenir - moderno, bom pra títulos
 $caption-font-family: $serif !default;
 
 /* type scale */

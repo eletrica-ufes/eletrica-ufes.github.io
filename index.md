@@ -16,7 +16,8 @@ excerpt: >
 {% assign projetos_agrupados = site.projetos | group_by: "semestre" | sort: "name" | reverse %}
 
 {% for grupo in projetos_agrupados %}
-  <h2>Semestre {{ grupo.name }}</h2>
+<details class="semestre-details" open>
+  <summary><h2>Semestre {{ grupo.name }}</h2></summary>
 
   <div class="projetos-list">
     {% for projeto in grupo.items %}
@@ -48,4 +49,5 @@ excerpt: >
       </a>
     {% endfor %}
   </div>
+</details>
 {% endfor %}
