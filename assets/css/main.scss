@@ -5,6 +5,17 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* ==========================================================================
+   Paleta do projeto
+   Mude os valores aqui para atualizar as cores em todo o site.
+   ========================================================================== */
+$brand-color: #0056b3;
+$brand-color-light: #e6f0fb;
+$text-dark: #222222;
+$text-body: #555555;
+$text-muted: #777777;
+$border-light: #e5e5e5;
+
 /* Lista e Cards Minimalistas de Projetos */
 .projetos-list {
   display: flex;
@@ -18,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $border-light;
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   text-decoration: none !important;
@@ -29,8 +40,13 @@
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-    border-color: #0056b3;
+    border-color: $brand-color;
     text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: 3px;
   }
 
   .card-content {
@@ -44,16 +60,16 @@
     margin: 0;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #222222;
+    color: $text-dark;
     line-height: 1.35;
   }
 
   .card-excerpt {
     margin: 0;
     font-size: 0.92rem;
-    color: #555555;
+    color: $text-body;
     line-height: 1.5;
-    /* Corta o texto em até 3 linhas com reticências */
+    /* Corta o texto em até 4 linhas com reticências */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -65,7 +81,7 @@
     flex-wrap: wrap;
     gap: 1.2rem;
     font-size: 0.85rem;
-    color: #777777;
+    color: $text-muted;
     margin-top: 0.4rem;
 
     span {
@@ -75,7 +91,7 @@
     }
 
     i {
-      color: #0056b3;
+      color: $brand-color;
     }
   }
 
@@ -132,31 +148,53 @@
   margin-bottom: 2em !important;
 }
 
+/* ---- seções de semestre recolhíveis ---- */
 .semestre-details {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 
   summary {
     cursor: pointer;
-    list-style: none; /* remove a setinha padrão do navegador */
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $border-light;
 
     h2 {
       display: inline-block;
+      margin: 0;
     }
 
     &::-webkit-details-marker {
-      display: none; /* remove a setinha no Chrome/Safari */
+      display: none;
     }
 
     &::before {
       content: "▶";
       display: inline-block;
-      margin-right: 0.5em;
-      font-size: 0.7em;
+      font-size: 0.6em;
+      color: $text-muted;
       transition: transform 0.2s ease;
+      align-self: center;
     }
   }
 
   &[open] summary::before {
     transform: rotate(90deg);
+  }
+
+  .semestre-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $brand-color;
+    background: $brand-color-light;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    margin-left: auto;
+  }
+
+  .projetos-list {
+    margin-top: 1.5rem;
   }
 }

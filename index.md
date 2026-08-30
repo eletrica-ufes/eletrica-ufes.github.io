@@ -17,7 +17,10 @@ excerpt: >
 
 {% for grupo in projetos_agrupados %}
 <details class="semestre-details" open>
-  <summary><h2>Semestre {{ grupo.name }}</h2></summary>
+<summary>
+  <h2>Semestre {{ grupo.name }}</h2>
+  <span class="semestre-count">{{ grupo.items.size }} projeto{% if grupo.items.size != 1 %}s{% endif %}</span>
+</summary>
 
   <div class="projetos-list">
     {% for projeto in grupo.items %}

@@ -53,7 +53,6 @@ tags:
 
 O Instituto Caminho do Bem e a AMPE Central necessitavam de uma análise preliminar para reduzir seus custos de energia elétrica e viabilizar planos futuros de climatização das suas instalações. A demanda principal da comunidade atendida foi a estruturação de uma alternativa sustentável compatível com a infraestrutura elétrica local (127V monofásica).
 
----
 
 ## <i class="fas fa-tasks"></i> Atividades Realizadas
 
@@ -62,7 +61,6 @@ O Instituto Caminho do Bem e a AMPE Central necessitavam de uma análise prelimi
 * **Dimensionamento Energético:** Cálculos de potência de pico alinhados à média solarimétrica da região de Serra-ES (5,0 kWh/m²·dia).
 * **Engenharia de Soluções:** Adequação do projeto à rede 127V existente com a proposta de uso de microinversores, evitando custos adicionais de autotransformadores para a instituição parceira.
 
----
 
 ## <i class="fas fa-chart-line"></i> Resultados e Entregas
 
@@ -76,5 +74,4 @@ O Instituto Caminho do Bem e a AMPE Central necessitavam de uma análise prelimi
 </div>
 
 {% include materiais-projeto.html %}
----
 
