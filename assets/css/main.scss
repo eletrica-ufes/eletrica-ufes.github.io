@@ -53,9 +53,9 @@
     font-size: 0.92rem;
     color: #555555;
     line-height: 1.5;
-    /* Corta o texto em até 2 linhas com reticências */
+    /* Corta o texto em até 3 linhas com reticências */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

@@ -1,6 +1,7 @@
 ---
-title: "Estudo de Viabilidade Técnica e Econômica para Implantação de Geração Fotovoltaica no Instituto Caminho do Bem"
-excerpt: "Estudo de viabilidade preliminar para instalação de Sistema Fotovoltaico Conectado à Rede no Instituto Caminho do Bem."
+title: "Estudo de Viabilidade Técnica Implantação de Geração Fotovoltaica no Instituto Caminho do Bem"
+# excerpt: "Análise de viabilidade para implantação solar em rede 127V no Instituto Caminho do Bem, projetando a geração de mais de 600 kWh/mês e finalizando relatório técnico para investimento."
+excerpt: "Elaboração de estudo de viabilidade técnica e econômica para a instalação de usinas fotovoltaicas no Instituto Caminho do Bem. O projeto mapeou a área, contornou limitações da rede 127V com o uso de microinversores e dimensionou 5,90 kWp de potência, projetando a geração de mais de 600 kWh/mês e entregando o relatório para captação de recursos."
 
 layout: splash
 author_profile: false
@@ -9,7 +10,7 @@ author_profile: false
 header:
   overlay_image: /assets/images/projetos/2025-2-fotovoltaica/banner.jpg
   overlay_filter: 0.4 # Escurece a imagem para dar contraste ao título
-  show_overlay_excerpt: false
+  show_overlay_excerpt: true
   #teaser: /assets/images/projetos/2026-1-fotovoltaica/fachada.jpg
 
 # Dados extensão
