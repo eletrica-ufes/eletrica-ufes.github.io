@@ -156,7 +156,7 @@ $border-light: #e5e5e5;
     cursor: pointer;
     list-style: none;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 0.75rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid $border-light;
@@ -164,40 +164,39 @@ $border-light: #e5e5e5;
     h2 {
       display: inline-block;
       margin: 0;
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     &::-webkit-details-marker {
       display: none;
     }
-
-    &::before {
-      content: "▶";
-      display: inline-block;
-      font-size: 0.6em;
-      color: $text-muted;
-      transition: transform 0.2s ease;
-      align-self: center;
-    }
   }
 
-  &[open] summary::before {
+  .summary-icon {
+    color: $text-muted;
+    font-size: 0.75em;
+    transition: transform 0.2s ease;
+  }
+
+  &[open] .summary-icon {
     transform: rotate(90deg);
   }
 
-.semestre-meta {
-  display: flex;
-  gap: 0.5rem;
-  margin-left: auto; /* empurra o grupo inteiro pra direita */
-}
+  .semestre-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
 
-.semestre-count {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: $brand-color;
-  background: $brand-color-light;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-}
+  .semestre-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $brand-color;
+    background: $brand-color-light;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+  }
 
   .projetos-list {
     margin-top: 1.5rem;

@@ -26,11 +26,12 @@ excerpt: >
 
 <details class="semestre-details" open>
   <summary>
-    <h2>Semestre {{ grupo.name }}</h2>
-    <div class="semestre-meta">
-      <span class="semestre-count">{{ grupo.items.size }} projeto{% if grupo.items.size != 1 %}s{% endif %}</span>
-      <span class="semestre-count">{{ estudantes_unicos.size }} discente{% if estudantes_unicos.size != 1 %}s{% endif %}</span>
-    </div>
+    <i class="fas fa-chevron-right summary-icon"></i>
+      <h2>Semestre {{ grupo.name }}</h2>
+      <div class="semestre-meta">
+        <span class="semestre-count">{{ grupo.items.size }} projeto{% if grupo.items.size != 1 %}s{% endif %}</span>
+        <span class="semestre-count">{{ estudantes_unicos.size }} discente{% if estudantes_unicos.size != 1 %}s{% endif %}</span>
+      </div>
   </summary>
 
   <div class="projetos-list">
