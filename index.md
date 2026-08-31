@@ -16,11 +16,22 @@ excerpt: >
 {% assign projetos_agrupados = site.projetos | group_by: "semestre" | sort: "name" | reverse %}
 
 {% for grupo in projetos_agrupados %}
+{% assign todos_estudantes = "" | split: "" %}
+{% for projeto in grupo.items %}
+  {% if projeto.estudantes %}
+    {% assign todos_estudantes = todos_estudantes | concat: projeto.estudantes %}
+  {% endif %}
+{% endfor %}
+{% assign estudantes_unicos = todos_estudantes | uniq %}
+
 <details class="semestre-details" open>
-<summary>
-  <h2>Semestre {{ grupo.name }}</h2>
-  <span class="semestre-count">{{ grupo.items.size }} projeto{% if grupo.items.size != 1 %}s{% endif %}</span>
-</summary>
+  <summary>
+    <h2>Semestre {{ grupo.name }}</h2>
+    <div class="semestre-meta">
+      <span class="semestre-count">{{ grupo.items.size }} projeto{% if grupo.items.size != 1 %}s{% endif %}</span>
+      <span class="semestre-count">{{ estudantes_unicos.size }} discente{% if estudantes_unicos.size != 1 %}s{% endif %}</span>
+    </div>
+  </summary>
 
   <div class="projetos-list">
     {% for projeto in grupo.items %}

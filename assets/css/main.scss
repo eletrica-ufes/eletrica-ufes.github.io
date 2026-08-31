@@ -184,15 +184,20 @@ $border-light: #e5e5e5;
     transform: rotate(90deg);
   }
 
-  .semestre-count {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: $brand-color;
-    background: $brand-color-light;
-    padding: 0.25rem 0.7rem;
-    border-radius: 999px;
-    margin-left: auto;
-  }
+.semestre-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto; /* empurra o grupo inteiro pra direita */
+}
+
+.semestre-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $brand-color;
+  background: $brand-color-light;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
 
   .projetos-list {
     margin-top: 1.5rem;
