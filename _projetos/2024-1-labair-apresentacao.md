@@ -1,0 +1,67 @@
+---
+title: "Apresentação Expositiva sobre o Laboratório de Automação Inteligente e Robótica (LabAir) da UFES"
+excerpt: 
+layout: splash
+author_profile: false
+header:
+  overlay_image: /assets/images/banner.jpg
+  overlay_filter: 0.4
+  show_overlay_excerpt: true
+semestre: "2024.1"
+publico_alvo: 
+pessoas_beneficiadas: 
+estudantes:
+  - "Viktor Kamei"
+  - "Camila de Rossi Audibert"
+orientadores:
+  - "Daniel Khede Dourado Villa"
+parceiros:
+  - "Laboratório de Automação Inteligente e Robótica (LabAir - UFES)"
+localidade:
+categories:
+  - Computação
+  - Robótica
+tags:
+materiais:
+  youtube_playlist: 
+---
+
+{% capture ficha_tecnica %}
+## <i class="fas fa-info-circle"></i> Ficha Técnica do Projeto
+{% if page.publico_alvo %}
+*  <i class="fas fa-users"></i>  **Público-Alvo:**  {{ page.publico_alvo }}
+{% endif %}
+{% if page.pessoas_beneficiadas %}
+*  <i class="fas fa-heart"></i> **Pessoas beneficiadas:** {{ page.pessoas_beneficiadas }}
+{% endif %}
+{% if page.parceiros %}
+*  <i class="fas fa-handshake"></i>  **Parceiros:**  {{ page.parceiros | join: ", " }}
+{% endif %}
+{% if page.localidade %}
+*  <i class="fas fa-map-marker-alt"></i>  **Local:**  {{ page.localidade }}
+{% endif %}
+*  <i class="fas fa-user-graduate"></i>  **Discentes Responsáveis:**  {{ page.estudantes | join: ", " }}
+*  <i class="fas fa-chalkboard-teacher"></i>  **Orientação:**  {{ page.orientadores | join: ", " }}
+{% endcapture %}
+
+<div class="notice--primary">
+{{ ficha_tecnica | markdownify }}
+</div>
+
+## <i class="fas fa-bullseye"></i> Contexto
+
+
+## <i class="fas fa-tasks"></i> Atividades Realizadas
+
+*   **Atividade 1:** Descrição da atividade 1
+
+## <i class="fas fa-chart-line"></i> Resultados e Entregas
+
+<div class="notice--success">
+  <h4 style="margin-top:0;"><i class="fas fa-check-circle"></i> Principais Conquistas</h4>
+    <ul>
+        <li> Resultado 1</li>
+    </ul>
+</div>
+
+{% include materiais-projeto.html %}
